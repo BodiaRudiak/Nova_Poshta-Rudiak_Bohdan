@@ -1,0 +1,577 @@
+<mxfile host="app.diagrams.net" agent="draw.io" pages="3">
+  <diagram id="nova_poshta_level_1" name="01 Контекст (Level 1)">
+    <mxGraphModel dx="4720" dy="3430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1070" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=35;fontStyle=1;fontFamily=Arial;fontColor=#183052;" value="C4 · Рівень 1 — Контекст системи" vertex="1">
+          <mxGeometry height="55" width="1920" x="90" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="subheading" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=19;fontFamily=Arial;fontColor=#607080;" value="Хто використовує систему доставки та з якими зовнішніми сервісами вона взаємодіє" vertex="1">
+          <mxGeometry height="40" width="1920" x="90" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="customer" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#4F873C;fillColor=#F0F9EA;fontColor=#22471F;fontFamily=Arial;fontSize=19;shape=mxgraph.basic.roundRect;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Клієнт&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Відправляє, отримує і відстежує посилки&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="355" x="90" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#4F873C;fillColor=#F0F9EA;fontColor=#22471F;fontFamily=Arial;fontSize=19;shape=mxgraph.basic.roundRect;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Персонал&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Оператор, сортувальник, підтримка, адміністратор&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="355" x="90" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="courier" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#4F873C;fillColor=#F0F9EA;fontColor=#22471F;fontFamily=Arial;fontSize=19;shape=mxgraph.basic.roundRect;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Кур’єр&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Забирає та доставляє відправлення&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="355" x="90" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="main" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#326AB3;fillColor=#E9F1FD;fontColor=#173B68;fontFamily=Arial;fontSize=19;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Система доставки «Нова пошта»&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Оформлення, трекінг, зміни доставки, оплата&lt;/div&gt;" vertex="1">
+          <mxGeometry height="255" width="520" x="795" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Платіжний провайдер&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Зовнішня система проведення платежів&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="350" x="1660" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="messages" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Сервіс сповіщень&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;SMS, push, email&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="350" x="1660" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="partner" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;CRM / інтернет-магазин&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Зовнішня система бізнес-клієнта&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="350" x="1660" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" target="main" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="295" />
+              <mxPoint x="600" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_0" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" value="Оформлює і відстежує [HTTPS]" vertex="1">
+          <mxGeometry height="34" width="425" x="447.5" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="staff" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" target="main" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_1" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" value="Обробляє відправлення [HTTPS]" vertex="1">
+          <mxGeometry height="34" width="425" x="407.5" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="courier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" target="main" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="735" />
+              <mxPoint x="615" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_2" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" value="Оновлює доставки [HTTPS]" vertex="1">
+          <mxGeometry height="34" width="384" x="388" y="734" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" target="payment" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1510" y="440" />
+              <mxPoint x="1510" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_3" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" value="Запитує оплату [HTTPS API]" vertex="1">
+          <mxGeometry height="34" width="416" x="1302" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" target="messages" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_4" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" value="Передає сповіщення [HTTPS API]" vertex="1">
+          <mxGeometry height="34" width="425" x="1280.5" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="partner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" target="main" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="735" />
+              <mxPoint x="1530" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_5" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" value="Створює накладні [HTTPS API]" vertex="1">
+          <mxGeometry height="34" width="425" x="1267.5" y="736" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_head" parent="1" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontStyle=1;fontSize=18;fontColor=#20334C;" value="Легенда:" vertex="1">
+          <mxGeometry height="35" width="110" x="100" y="893" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_person" parent="1" style="rounded=1;arcSize=4;fillColor=#F0F9EA;strokeColor=#4F873C;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="25" width="34" x="220" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_person" parent="1" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" value="Люди / ролі" vertex="1">
+          <mxGeometry height="35" width="187" x="264" y="893" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_system" parent="1" style="rounded=1;arcSize=4;fillColor=#E9F1FD;strokeColor=#326AB3;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="25" width="34" x="516" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_system" parent="1" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" value="Наша система" vertex="1">
+          <mxGeometry height="35" width="204" x="560" y="893" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_external" parent="1" style="rounded=1;arcSize=4;fillColor=#FFF7EA;strokeColor=#B77A25;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="25" width="34" x="823" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_external" parent="1" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" value="Зовнішня система" vertex="1">
+          <mxGeometry height="35" width="250" x="867" y="893" as="geometry" />
+        </mxCell>
+        <mxCell id="foot" parent="1" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#576778;" value="Позначення: напрямок стрілки = хто ініціює взаємодію; у квадратних дужках — протокол." vertex="1">
+          <mxGeometry height="40" width="1900" x="100" y="958" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" parent="1" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=14;fontColor=#8493A5;" value="НАВЧАЛЬНА АРХІТЕКТУРА · РУДЯК БОГДАН" vertex="1">
+          <mxGeometry height="26" width="1900" x="100" y="1000" as="geometry" />
+        </mxCell>
+              <mxCell id="edge_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.683;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="payment" target="main">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1835" y="190" /><mxPoint x="1150" y="190" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="label_6" value="Повідомляє результат оплати [HTTPS webhook]" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="150" width="470" height="34" as="geometry" />
+        </mxCell>
+</root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="nova_poshta_level_2" name="02 Контейнери (Level 2)">
+    <mxGraphModel dx="1300" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2550" pageHeight="1330" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="C4 · Рівень 2 — Контейнери" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=35;fontStyle=1;fontFamily=Arial;fontColor=#183052;" parent="1" vertex="1">
+          <mxGeometry x="90" y="45" width="2370" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="subheading" value="Окремі частини системи: два канали доступу, один Backend API, база даних і worker" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=19;fontFamily=Arial;fontColor=#607080;" parent="1" vertex="1">
+          <mxGeometry x="90" y="110" width="2370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="Межа системи «Нова пошта»" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=15;spacingLeft=24;fontSize=19;fontStyle=1;fontColor=#25548A;fillColor=none;strokeColor=#8FB3DF;strokeWidth=2;dashed=1;dashPattern=8 6;" parent="1" vertex="1">
+          <mxGeometry x="440" y="215" width="1520" height="895" as="geometry" />
+        </mxCell>
+        <mxCell id="users" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Користувачі&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Клієнт · персонал · кур’єр&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#4F873C;fillColor=#F0F9EA;fontColor=#22471F;fontFamily=Arial;fontSize=19;shape=mxgraph.basic.roundRect;" parent="1" vertex="1">
+          <mxGeometry x="50" y="465" width="305" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="web" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Вебзастосунок&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[React / TypeScript]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Кабінети та робочі сценарії&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#3677BA;fillColor=#EAF2FC;fontColor=#183F6E;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="540" y="285" width="365" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Мобільний застосунок&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[iOS / Android]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Кабінети та виїзні операції&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#3677BA;fillColor=#EAF2FC;fontColor=#183F6E;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="540" y="655" width="365" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Backend API&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[Node.js / REST API]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Бізнес-правила, ролі, транзакції&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#3677BA;fillColor=#EAF2FC;fontColor=#183F6E;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1065" y="460" width="405" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;PostgreSQL&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[SQL]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Посилки, історія, платежі, outbox&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#7865B6;fillColor=#F2F0FC;fontColor=#41346D;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="850" width="365" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="worker" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Notification Worker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[Фоновий процес]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Обробляє outbox і повтори&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#338C79;fillColor=#EAF8F5;fontColor=#215748;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1575" y="850" width="330" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="payments" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Платіжний провайдер&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Оплата та статус транзакції&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="2080" y="285" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="crm" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;CRM / інтернет-магазин&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Викликає інтеграційні API&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="2080" y="540" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="notif" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Сервіс сповіщень&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;SMS, push, email&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="2080" y="850" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="users" target="web">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="525" />
+              <mxPoint x="470" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_0" value="Користується [HTTPS]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="252.0" y="436" width="320" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="users" target="mobile">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="600" />
+              <mxPoint x="475" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_1" value="Користується [HTTPS]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="245.0" y="841" width="320" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="web" target="backend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="365" />
+              <mxPoint x="980" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_2" value="Викликає API [HTTPS/JSON]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="775.0" y="234" width="400" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="mobile" target="backend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="735" />
+              <mxPoint x="1000" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_3" value="Викликає API [HTTPS/JSON]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="794.0" y="843" width="400" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="backend" target="db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_4" value="Читає / записує [SQL/TCP]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1152.0" y="748" width="400" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="worker" target="db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_5" value="Забирає задачі [SQL/TCP]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1473.0" y="1023" width="384" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="backend" target="payments">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1810" y="515" />
+              <mxPoint x="1810" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_6" value="Ініціює оплату [HTTPS API]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1612.0" y="310" width="416" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="crm" target="backend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1860" y="615" />
+              <mxPoint x="1860" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_7" value="Створює накладні [HTTPS API]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1635.5" y="643" width="425" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="worker" target="notif">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_8" value="Відправляє [HTTPS API]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1809.0" y="806" width="352" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_head" value="Легенда:" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontStyle=1;fontSize=18;fontColor=#20334C;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1153" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_person" value="" style="rounded=1;arcSize=4;fillColor=#F0F9EA;strokeColor=#4F873C;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1158" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_person" value="Актори" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="264" y="1153" width="102" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_container" value="" style="rounded=1;arcSize=4;fillColor=#EAF2FC;strokeColor=#3677BA;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="461" y="1158" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_container" value="Контейнер" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="505" y="1153" width="153" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_database" value="" style="rounded=1;arcSize=4;fillColor=#F2F0FC;strokeColor=#7865B6;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="735" y="1158" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_database" value="Сховище" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="779" y="1153" width="119" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_worker" value="" style="rounded=1;arcSize=4;fillColor=#EAF8F5;strokeColor=#338C79;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="987" y="1158" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_worker" value="Worker" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="1031" y="1153" width="102" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_external" value="" style="rounded=1;arcSize=4;fillColor=#FFF7EA;strokeColor=#B77A25;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1228" y="1158" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_external" value="Зовнішня система" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="1272" y="1153" width="250" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="foot" value="Один користувач може працювати у вебі чи мобільному застосунку; дозволи (RBAC) перевіряє Backend API." style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#576778;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1218" width="2350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" value="НАВЧАЛЬНА АРХІТЕКТУРА · РУДЯК БОГДАН" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=14;fontColor=#8493A5;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1260" width="2350" height="26" as="geometry" />
+        </mxCell>
+              <mxCell id="edge_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.58;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="payments" target="backend">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2255" y="250" /><mxPoint x="1300" y="250" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="label_9" value="Повідомляє результат оплати [HTTPS webhook]" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="256" width="470" height="34" as="geometry" />
+        </mxCell>
+</root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="nova_poshta_level_3" name="03 Компоненти API (Level 3)">
+    <mxGraphModel dx="1300" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2640" pageHeight="1760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="C4 · Рівень 3 — Компоненти Backend API" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=35;fontStyle=1;fontFamily=Arial;fontColor=#183052;" parent="1" vertex="1">
+          <mxGeometry x="90" y="45" width="2460" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="subheading" value="Один контейнер Backend API: правила доступу, оформлення, статуси, операції та інтеграції" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=19;fontFamily=Arial;fontColor=#607080;" parent="1" vertex="1">
+          <mxGeometry x="90" y="110" width="2460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="Межа контейнера Backend API · Node.js / REST" style="rounded=1;arcSize=2;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=15;spacingLeft=24;fontSize=19;fontStyle=1;fontColor=#25548A;fillColor=none;strokeColor=#8FB3DF;strokeWidth=2;dashed=1;dashPattern=8 6;" parent="1" vertex="1">
+          <mxGeometry x="455" y="260" width="1635" height="965" as="geometry" />
+        </mxCell>
+        <mxCell id="web" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Вебзастосунок&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[Окремий контейнер]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Клієнт і персонал&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#3677BA;fillColor=#EAF2FC;fontColor=#183F6E;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="70" y="330" width="310" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Мобільний застосунок&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:15px;&quot;&gt;[Окремий контейнер]&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Клієнт, персонал, кур’єр&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#3677BA;fillColor=#EAF2FC;fontColor=#183F6E;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="70" y="620" width="310" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;API та RBAC&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Маршрутизація, роль, дія та ресурс&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="550" y="430" width="345" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="shipment" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Оформлення відправлень&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Накладні та ідемпотентність&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="335" width="355" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="tracking" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Статуси та історія&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Перевірка переходів і версій&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1530" y="335" width="370" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Операції персоналу&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Приймання, видача та доставка&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="735" width="355" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="integr" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Партнерські інтеграції&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Ключі API, квоти, дублікати&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="550" y="910" width="345" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="pay" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Платіжний модуль&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Запит і підтвердження платежів&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1530" y="735" width="370" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="outbox" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Outbox&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Транзакційні завдання сповіщень&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#426DB6;fillColor=#EBF1FF;fontColor=#243A6C;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="1035" width="370" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;PostgreSQL&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Суміжний контейнер&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#7865B6;fillColor=#F2F0FC;fontColor=#41346D;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="2220" y="1010" width="345" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="provider" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Платіжний провайдер&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Зовнішня система&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="2220" y="635" width="345" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="worker" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;Notification Worker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Зчитує outbox та надсилає повідомлення&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#338C79;fillColor=#EAF8F5;fontColor=#215748;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="1720" y="1445" width="395" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="crm" value="&lt;div style=&quot;font-size:22px;&quot;&gt;&lt;b&gt;CRM / інтернет-магазин&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size:16px;margin-top:6px;&quot;&gt;Зовнішній партнер&lt;/div&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeWidth=2.2;strokeColor=#B77A25;fillColor=#FFF7EA;fontColor=#6A4310;fontFamily=Arial;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="75" y="1020" width="335" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="web" target="auth">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="408" />
+              <mxPoint x="475" y="493" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_0" value="Викликає API [HTTPS]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="310.0" y="354" width="320" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="mobile" target="auth">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="690" />
+              <mxPoint x="475" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_1" value="Викликає API [HTTPS]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="307.0" y="708" width="320" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="auth" target="shipment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="475" />
+              <mxPoint x="960" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_2" value="Оформлення [виклик]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="797.0" y="295" width="304" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="auth" target="staff">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="525" />
+              <mxPoint x="950" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_3" value="Робочі дії [виклик]" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry height="34" width="200" x="740" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="auth" target="integr">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_4" value="Доступ партнерів [виклик]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="608.0" y="698" width="400" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="auth" target="pay">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="535" />
+              <mxPoint x="990" y="660" />
+              <mxPoint x="1705" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_5" value="Оплата [виклик]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1205.0" y="612" width="270" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="shipment" target="tracking">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_6" value="Перехід стану [виклик]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1281.0" y="293" width="352" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="staff" target="tracking">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1435" y="805" />
+              <mxPoint x="1435" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_7" value="Сканування [виклик]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1300.0" y="540" width="304" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="tracking" target="outbox">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1985" y="470" />
+              <mxPoint x="1985" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_8" value="Створює завдання [виклик]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1560.0" y="1083" width="400" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="tracking" target="db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2075" y="390" />
+              <mxPoint x="2075" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_9" value="Статуси [SQL/TCP]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1931.0" y="341" width="272" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="outbox" target="db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2120" y="1155" />
+              <mxPoint x="2120" y="1125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_10" value="Outbox [SQL/TCP]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1870.0" y="1183" width="270" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="pay" target="provider">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090" y="805" />
+              <mxPoint x="2090" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_11" value="Проводить платіж [HTTPS API]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="1877.5" y="659" width="425" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="crm" target="integr">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="1095" />
+              <mxPoint x="480" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_12" value="Створює [HTTPS API]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="298.0" y="958" width="304" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="worker" target="db">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2170" y="1518" />
+              <mxPoint x="2170" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_13" value="Зчитує outbox [SQL/TCP]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="2146.0" y="1373" width="368" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_head" value="Легенда:" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontStyle=1;fontSize=18;fontColor=#20334C;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1583" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_container" value="" style="rounded=1;arcSize=4;fillColor=#EAF2FC;strokeColor=#3677BA;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1588" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_container" value="Суміжний контейнер" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="264" y="1583" width="250" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_component" value="" style="rounded=1;arcSize=4;fillColor=#EBF1FF;strokeColor=#426DB6;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="570" y="1588" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_component" value="Компонент API" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="614" y="1583" width="221" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_database" value="" style="rounded=1;arcSize=4;fillColor=#F2F0FC;strokeColor=#7865B6;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="888" y="1588" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_database" value="База даних" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="932" y="1583" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_external" value="" style="rounded=1;arcSize=4;fillColor=#FFF7EA;strokeColor=#B77A25;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1173" y="1588" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_external" value="Зовнішня система" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="1217" y="1583" width="250" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_worker" value="" style="rounded=1;arcSize=4;fillColor=#EAF8F5;strokeColor=#338C79;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1523" y="1588" width="34" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_text_worker" value="Worker" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#344257;" parent="1" vertex="1">
+          <mxGeometry x="1567" y="1583" width="102" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="foot" value="Веб і мобільний застосунок НЕ є ролями: авторизація в API перевіряє користувача, дію та конкретний ресурс." style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=17;fontColor=#576778;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1648" width="2440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" value="НАВЧАЛЬНА АРХІТЕКТУРА · РУДЯК БОГДАН" style="text;html=1;fillColor=none;strokeColor=none;align=left;fontSize=14;fontColor=#8493A5;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1690" width="2440" height="26" as="geometry" />
+        </mxCell>
+              <mxCell id="edge_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.232;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.818;entryDx=0;entryDy=0;" edge="1" parent="1" source="provider" target="pay">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2300" y="870" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="label_14" value="Webhook результату [HTTPS]" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="2180" y="878" width="400" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;exitX=0.865;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.18;entryDx=0;entryDy=0;" edge="1" parent="1" source="pay" target="db">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1850" y="1040" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="label_15" value="Платежі [SQL/TCP]" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="950" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.303;exitDx=0;exitDy=0;entryX=0;entryY=0.818;entryDx=0;entryDy=0;" edge="1" parent="1" source="integr" target="shipment">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1008" y="960" /><mxPoint x="1008" y="470" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="label_16" value="Створює накладні [виклик]" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1022" y="915" width="300" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#65768A;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.939;exitDx=0;exitDy=0;entryX=0.189;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="auth" target="tracking">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1600" y="585" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="label_17" value="Відстеження [виклик]" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fillColor=none;strokeColor=none;autosize=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1612" y="530" width="230" height="34" as="geometry" />
+        </mxCell>
+</root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
