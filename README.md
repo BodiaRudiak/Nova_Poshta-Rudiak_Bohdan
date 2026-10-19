@@ -19,6 +19,7 @@
 | ДЗ-1 | Актори, обмеження, unhappy paths, функціональні та нефункціональні вимоги | [requirements.md](docs/homework-1/requirements.md) |
 | ДЗ-2 | C4-модель системи: рівні 1–3 з поясненнями | [c4-explanations.md](docs/homework-2/c4-explanations.md) |
 | ДЗ-3 | Architecture Decision Records | [ADR-001](docs/homework-3/ADR-001.md), [ADR-002](docs/homework-3/ADR-002.md), [ADR-003](docs/homework-3/ADR-003.md) |
+| ДЗ-4 | Архітектурні характеристики, QAS, перегляд ADR і C4 | [characteristics-and-qas.md](docs/homework-4/characteristics-and-qas.md), [ADR-004](docs/homework-4/ADR-004.md), [ADR-005](docs/homework-4/ADR-005.md) |
 
 ### ДЗ-1. Вимоги
 
@@ -53,6 +54,20 @@
 1. [ADR-001 — Зберігання поточного статусу посилки разом з історією змін](docs/homework-3/ADR-001.md)
 2. [ADR-002 — Контроль переходів статусів та захист від одночасних змін](docs/homework-3/ADR-002.md)
 3. [ADR-003 — Надійне асинхронне надсилання сповіщень через Notification Worker](docs/homework-3/ADR-003.md)
+
+### ДЗ-4. Архітектурні характеристики
+
+[docs/homework-4/characteristics-and-qas.md](docs/homework-4/characteristics-and-qas.md)
+
+1. Десять архітектурних характеристик і механізми, якими кожна змінює структуру системи.
+2. Три головні характеристики — Data Integrity, Responsiveness, Availability — і наслідки відмови від решти.
+3. Три Quality Attribute Scenarios із шести частин.
+4. Перегляд C4-моделі та ADR-001…003.
+
+Нові рішення за результатами перегляду:
+
+1. [ADR-004 — Реплікація PostgreSQL та автоматичне перемикання при відмові](docs/homework-4/ADR-004.md)
+2. [ADR-005 — Розділення читання та запису для відстеження посилок](docs/homework-4/ADR-005.md)
 
 ## Як відкрити Draw.io-файл
 
@@ -93,8 +108,12 @@ Nova_Poshta-Rudiak_Bohdan/
     │       ├── Level_1.png
     │       ├── Level_2.png
     │       └── Level_3.png
-    └── homework-3/
-        ├── ADR-001.md
-        ├── ADR-002.md
-        └── ADR-003.md
+    ├── homework-3/
+    │   ├── ADR-001.md
+    │   ├── ADR-002.md
+    │   └── ADR-003.md
+    └── homework-4/
+        ├── characteristics-and-qas.md
+        ├── ADR-004.md
+        └── ADR-005.md
 ```
